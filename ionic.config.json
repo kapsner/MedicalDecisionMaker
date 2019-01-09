@@ -1,0 +1,7 @@
+{
+  "name": "decisionmaking",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

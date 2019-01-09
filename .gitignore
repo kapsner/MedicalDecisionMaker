@@ -1,0 +1,28 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+/*
+/*/
+
+!.editorconfig
+!.gitignore
+!config.xml
+!ionic.config.json
+!package-lock.json
+!package.json
+!/resources/
+!/src/
+!tsconfig.json
+!tslint.json
+
+!/platforms/
+/platforms/*
+!/platforms/android/
+/platforms/android/*
+!/platforms/android/app/
+/platforms/android/app/*
+!/platforms/android/app/build/
+/platforms/android/app/build/*
+!/platforms/android/app/build/outputs/
+/platforms/android/app/build/outputs/*
+!/platforms/android/app/build/outputs/apk/

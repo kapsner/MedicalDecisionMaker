@@ -1,0 +1,53 @@
+<!--
+  Generated template for the ContingencyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Contingency Table</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="font-size: 12px">
+  <ion-grid>
+    <ion-row align-items-start>
+      <ion-col col-1></ion-col>
+      <ion-col></ion-col>
+      <ion-col>Condition</ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col col-1></ion-col>
+      <ion-col></ion-col>
+      <ion-col>pos</ion-col>
+      <ion-col>neg</ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col col-1>Test</ion-col>
+      <ion-col>pos</ion-col>
+      <ion-col style="background: greenyellow">{{item.abs_truepos}}</ion-col>
+      <ion-col style="background: lightcoral">{{item.abs_falsepos}}</ion-col>
+      <ion-col>{{item.abs_testpos}}</ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col col-1></ion-col>
+      <ion-col>neg</ion-col>
+      <ion-col style="background: lightcoral">{{item.abs_falseneg}}</ion-col>
+      <ion-col style="background: greenyellow">{{item.abs_trueneg}}</ion-col>
+      <ion-col>{{item.abs_testneg}}</ion-col>
+    </ion-row>
+    <ion-row align-items-end>
+      <ion-col col-1></ion-col>
+      <ion-col></ion-col>
+      <ion-col>{{item.abs_prevalence}}</ion-col>
+      <ion-col>{{item.abs_wellpeople}}</ion-col>
+      <ion-col>{{item.population}}</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
