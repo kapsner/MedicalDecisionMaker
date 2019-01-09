@@ -15,62 +15,62 @@
   </ion-row>
   <ion-row class="height">
     <ion-item>
-      <ion-range min=" 0 " max="100 " step="0.01 " pin="true " [(ngModel)]="sensitivity_value " (ionChange)="sensitivityModel($event) "></ion-range>
+      <ion-range min="0" max="100" step="0.01" pin="true" [(ngModel)]="sensitivity_value" (ionChange)="sensitivityModel($event)"></ion-range>
     </ion-item>
   </ion-row>
 
-  <ion-row class="height ">
-    <ion-col class="width ">
+  <ion-row class="height">
+    <ion-col class="width">
       <ion-label>Specificity (%)</ion-label>
     </ion-col>
     <ion-col>
-      <ion-input type="number " [(ngModel)]="specificity_value "></ion-input>
+      <ion-input type="number" [(ngModel)]="specificity_value"></ion-input>
     </ion-col>
   </ion-row>
-  <ion-row class="height ">
+  <ion-row class="height">
     <ion-item>
-      <ion-range min="0 " max="100 " step="0.01 " pin="false " [(ngModel)]="specificity_value " (ionChange)="specificityModel($event) "></ion-range>
+      <ion-range min="0" max="100" step="0.01" pin="true" [(ngModel)]="specificity_value" (ionChange)="specificityModel($event)"></ion-range>
     </ion-item>
   </ion-row>
 
-  <ion-row class="height ">
-    <ion-col class="width ">
+  <ion-row class="height">
+    <ion-col class="width">
       <ion-label>Pre-Test Probability (%)</ion-label>
     </ion-col>
     <ion-col>
-      <ion-input type="number " [(ngModel)]="prevalence_value "></ion-input>
+      <ion-input type="number" [(ngModel)]="prevalence_value"></ion-input>
     </ion-col>
   </ion-row>
-  <ion-row class="height2 ">
+  <ion-row class="height2">
     <ion-item>
-      <ion-range min="0 " max="100 " step="0.01 " pin="false " [(ngModel)]="prevalence_value " (ionChange)="prevalenceModel($event) "></ion-range>
+      <ion-range min="0" max="100" step="0.01" pin="true" [(ngModel)]="prevalence_value" (ionChange)="prevalenceModel($event)"></ion-range>
     </ion-item>
   </ion-row>
 
   <ion-grid>
-    <ion-row class="height " style="background: rgb(237, 101, 255) ">
-      <ion-col class="width ">False Negative Rate (%)</ion-col>
-      <ion-col class="right ">{{item.false_negative}}</ion-col>
+    <ion-row class="height" style="background: rgba(255, 28, 28, 0.548)">
+      <ion-col class="width">False Negative Rate (%)</ion-col>
+      <ion-col class="right">{{item.false_negative}}</ion-col>
     </ion-row>
 
-    <ion-row class="height " style="background: rgb(237, 101, 255) ">
-      <ion-col class="width ">False Positive Rate (%)</ion-col>
-      <ion-col class="right ">{{item.false_positive}}</ion-col>
+    <ion-row class="height" style="background: rgba(255, 28, 28, 0.548)">
+      <ion-col class="width">False Positive Rate (%)</ion-col>
+      <ion-col class="right">{{item.false_positive}}</ion-col>
     </ion-row>
 
-    <ion-row class="height " style="background: rgb(245, 155, 248) ">
-      <ion-col class="width ">Positive Predictive Value (%)</ion-col>
-      <ion-col class="right ">{{item.positive_predictive}}</ion-col>
+    <ion-row class="height" style="background: rgba(0, 255, 13, 0.5)">
+      <ion-col class="width">Positive Predictive Value (%)</ion-col>
+      <ion-col class="right">{{item.positive_predictive}}</ion-col>
     </ion-row>
 
-    <ion-row class="height " style="background: rgb(245, 155, 248) ">
-      <ion-col class="width ">Negative Predictive Value (%)</ion-col>
-      <ion-col class="right ">{{item.negative_predictive}}</ion-col>
+    <ion-row class="height" style="background: rgba(0, 255, 13, 0.5)">
+      <ion-col class="width">Negative Predictive Value (%)</ion-col>
+      <ion-col class="right">{{item.negative_predictive}}</ion-col>
     </ion-row>
 
-    <ion-row class="height " style="background: rgb(255, 230, 0) ">
-      <ion-col class="width ">Accuracy (%)</ion-col>
-      <ion-col class="right ">{{item.accuracy}}</ion-col>
+    <ion-row class="height" style="background: rgba(255, 230, 0, 0.575)">
+      <ion-col class="width">Accuracy (%)</ion-col>
+      <ion-col class="right">{{item.accuracy}}</ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
