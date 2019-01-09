@@ -59,7 +59,7 @@ export class HomePage {
   }
 
   calculations() {
-    console.log("Calculating the stuff....");
+    console.log("Calculating the stuff ....");
 
     this.item.population = 100000;
 
