@@ -13,3 +13,6 @@
 !/src/
 !tsconfig.json
 !tslint.json
+
+/platforms/*
+/resources/*
